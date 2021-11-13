@@ -24,7 +24,7 @@ public class MessageTimeStamp extends MessageMetadata{
     public HashMap<String, String> getData() {
         HashMap<String, String> information = super.getData();
         information.put("timeStamp", timeFormatter.format(timestamp));
-        return super.getData();
+        return information;
     }
 
     public void setTimeFormatter(SimpleDateFormat timeFormatter) {

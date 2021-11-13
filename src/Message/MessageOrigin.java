@@ -14,6 +14,6 @@ public class MessageOrigin extends MessageMetadata {
     public HashMap<String, String> getData() {
         HashMap<String, String> information = super.getData();
         information.put("origin", origin);
-        return super.getData();
+        return information;
     }
 }
